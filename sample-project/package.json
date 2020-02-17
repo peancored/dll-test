@@ -1,0 +1,15 @@
+{
+  "name": "sample-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "commons": "file:../commons",
+    "proxy": "file:../proxy"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
