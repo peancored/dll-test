@@ -3,6 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   context: process.cwd(),
+  mode: 'development',
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.less', '.css'],
     modules: [__dirname, 'node_modules']

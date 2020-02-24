@@ -12,10 +12,10 @@ module.exports = {
   plugins: [
     new webpack.DllReferencePlugin({
       context: __dirname,
-      manifest: require('./node_modules/proxy/dist/library.json')
+      manifest: require('./node_modules/commons/dist/library.json')
     }),
     new CopyPlugin([
-      { from: 'node_modules/proxy/dist/library.dll.js', to: '' },
+      { from: 'node_modules/commons/dist/library.dll.js', to: '' },
     ])
   ]
 };

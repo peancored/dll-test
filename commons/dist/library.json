@@ -1,0 +1,13 @@
+{
+  "name": "library",
+  "content": {
+    "./lodash.js": {
+      "id": "./lodash.js",
+      "buildMeta": { "exportsType": "namespace", "providedExports": true }
+    },
+    "./moment.js": {
+      "id": "./moment.js",
+      "buildMeta": { "exportsType": "namespace", "providedExports": true }
+    }
+  }
+}
