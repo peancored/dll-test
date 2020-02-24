@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const glob = require("glob");
 
 module.exports = {
   // context: process.cwd(),
@@ -12,10 +13,7 @@ module.exports = {
     // modules: [__dirname, 'node_modules']
   },
   entry: {
-    library: [
-      './lodash.js',
-      './moment.js'
-    ]
+    library: glob.sync("./*.js", { ignore: "./webpack.config.js" })
   },
   output: {
     filename: '[name].dll.js',
