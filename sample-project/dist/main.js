@@ -86,14 +86,25 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/commons/src/index.js":
-/*!********************************************************************************!*\
-  !*** delegated ./node_modules/commons/src/index.js from dll-reference library ***!
-  \********************************************************************************/
-/*! exports provided: lodash, moment */
+/***/ "./node_modules/commons/lodash.js":
+/*!*****************************************************************************!*\
+  !*** delegated ./node_modules/commons/lodash.js from dll-reference library ***!
+  \*****************************************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = (__webpack_require__(/*! dll-reference library */ \"dll-reference library\"))(4);\n\n//# sourceURL=webpack:///delegated_./node_modules/commons/src/index.js_from_dll-reference_library?");
+eval("module.exports = (__webpack_require__(/*! dll-reference library */ \"dll-reference library\"))(5);\n\n//# sourceURL=webpack:///delegated_./node_modules/commons/lodash.js_from_dll-reference_library?");
+
+/***/ }),
+
+/***/ "./node_modules/commons/moment.js":
+/*!*****************************************************************************!*\
+  !*** delegated ./node_modules/commons/moment.js from dll-reference library ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = (__webpack_require__(/*! dll-reference library */ \"dll-reference library\"))(7);\n\n//# sourceURL=webpack:///delegated_./node_modules/commons/moment.js_from_dll-reference_library?");
 
 /***/ }),
 
@@ -105,7 +116,7 @@ eval("module.exports = (__webpack_require__(/*! dll-reference library */ \"dll-r
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var commons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! commons */ \"./node_modules/commons/src/index.js\");\n\n\nfunction b() {\n  return Object(commons__WEBPACK_IMPORTED_MODULE_0__[\"moment\"])(commons__WEBPACK_IMPORTED_MODULE_0__[\"lodash\"].sum([1,2,3]));\n}\n\nconsole.log(b());\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var commons_moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! commons/moment */ \"./node_modules/commons/moment.js\");\n/* harmony import */ var commons_lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! commons/lodash */ \"./node_modules/commons/lodash.js\");\n\n\n\nfunction b() {\n  // console.log(c, commons, moment, lodash, _);\n  return Object(commons_moment__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(Object(commons_lodash__WEBPACK_IMPORTED_MODULE_1__[\"sum\"])([1,2,3]));\n}\n\nconsole.log(b());\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

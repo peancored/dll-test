@@ -1,7 +1,9 @@
-import {moment, lodash} from 'commons';
+import moment from 'commons/moment';
+import lodash, { sum } from 'commons/lodash';
 
 function b() {
-  return moment(lodash.sum([1,2,3]));
+  // console.log(c, commons, moment, lodash, _);
+  return moment(sum([1,2,3]));
 }
 
 console.log(b());

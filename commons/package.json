@@ -1,8 +1,11 @@
 {
   "name": "commons",
   "version": "1.0.0",
-  "main": "src/index.js",
   "license": "MIT",
+  "main": "./index.js",
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {
     "lodash": "^4.17.15",
     "moment": "^2.24.0"
