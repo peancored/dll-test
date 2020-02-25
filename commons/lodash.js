@@ -1,2 +1,2 @@
-export * from 'lodash';
-export { default } from 'lodash';
+export { sum } from 'lodash-es';
+// export { default } from 'lodash-es';

@@ -1,41 +1,26 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 const glob = require("glob");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  // context: process.cwd(),
-  mode: 'development',
-  resolve: {
-    alias: {
-      myalias: './'
-    },
-    // extensions: ['.js', '.jsx', '.json', '.less', '.css'],
-    // modules: [__dirname, 'node_modules']
-  },
+  mode: 'production',
   entry: {
-    library: glob.sync("./*.js", { ignore: "./webpack.config.js" })
+    commons: glob.sync("./*.js", {
+      ignore: ["./webpack.config.js", "./prefixer.js"]
+    })
   },
   output: {
-    filename: '[name].dll.js',
-    path: path.resolve(__dirname, './dist'),
-    library: '[name]'
+    filename: "[name].dll.js",
+    path: path.resolve(__dirname, "./dist"),
+    library: "[name]"
   },
   plugins: [
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.DllPlugin({
-      name: '[name]',
+      name: "[name]",
       entryOnly: true,
-      path: './dist/[name].json'
+      path: "./dist/[name].json"
     })
   ]
 };
-
-// module.exports = {
-  // entry: './src/index',
-  // mode: 'development',
-  // output: {
-    // filename: 'index.js',
-    // path: path.resolve(__dirname, 'dist'),
-    // library: "commons"
-  // }
-// };

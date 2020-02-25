@@ -1,5 +1,5 @@
 import moment from 'commons/moment';
-import lodash, { sum } from 'commons/lodash';
+import { sum } from 'commons/lodash';
 
 function b() {
   // console.log(c, commons, moment, lodash, _);

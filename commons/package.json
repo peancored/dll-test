@@ -4,13 +4,16 @@
   "license": "MIT",
   "main": "./index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack && npm run prefix",
+    "prefix": "FILENAME=commons PREFIX=node_modules/commons node ./prefixer.js"
   },
   "dependencies": {
     "lodash": "^4.17.15",
+    "lodash-es": "^4.17.15",
     "moment": "^2.24.0"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
   }
